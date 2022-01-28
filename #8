@@ -24,3 +24,19 @@
             }
         }
     }
+//Collage
+public void myCollage()
+  {
+   Picture robot=new Picture("robot.jpg");
+   Picture snowman=new Picture("snowman.jpg");
+   Picture swan=new Picture("swan");
+   this.copy(robot,0,0);
+   robot.mirrorDiagonal();
+   this.copy(robot,100,0);
+   swan.zeroBlue();
+   this.copy(swan, 200,0,65,308,120,400);
+   swan.grayscale();
+   this.copy(snowman,300,0,78,107,202,352);
+   snowman.mirrorVertical();
+   this.mirrorHorizontal();
+   }
